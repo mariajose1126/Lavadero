@@ -1,0 +1,349 @@
+*{
+	font-family: "HelveticaNeueLTStd-Lt", Sans-serif;
+	-ms-font-family: "HelveticaNeueLTStd-Lt";
+}
+
+@font-face{
+	font-family: HelveticaNeueLTStd-Lt;
+	src: url(../fonts/Helvetica/HelveticaNeueLTStd-Lt.otf);
+}
+
+/*barra superior gris, fija */
+
+header{
+	background: linear-gradient(to bottom, black, transparent);
+	width: 100%;
+	height: 120px;
+	position: fixed;
+}
+
+header img{
+	margin: 20px 0 0 150px
+}
+
+header button{
+	font-size:14px ;
+	float: right;
+	color: white;
+	background:none;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0);
+	margin: 35px 175px 0 0;
+	padding: 5px 15px;	
+}
+
+header button:hover{
+	transition: border-color 0.5s ease;
+	border-color: rgba(255, 255, 255, .8) ;
+}
+
+/* Enlaces */
+a, .col-4 p{	
+	font-size:14px;
+	color: #93CDDA;
+}
+a:hover{
+	opacity: .5;
+	-webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+a:visited {
+    color: #66B7BF;
+}
+
+div img+a{
+	display:block;
+}
+
+/* imágen principal */
+.banner_inicio{
+	height:850px; 
+	background-image: url("../imagenes/sala.png");
+}
+.texto_inicio{
+	padding-top: 25%;
+	line-height: 1.5;
+}
+
+form{
+	padding-top: 5%
+}
+
+/*Botón: Lavar ahora*/
+input[type='submit'], h3+button{
+	font-size: 16px;
+    line-height: 1.75em;
+    color: white;
+    background-color: #F50057;
+    border: none;
+    padding: .5% 2%;
+    margin-top: 3%
+}
+
+h3+button{
+	margin-top: 2%
+}
+.button_grande{
+	padding: .9% 8% !important;
+}
+
+input[type='submit']:hover,h3+button:hover{
+	background-color: rgba(255, 000, 000, 0.5);
+	-webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+/*input para ingresar código postal */
+input[type='text']{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: .3% ;
+	background: none;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	padding: 0 45px 10px 0;
+	margin-right: 10px;
+}
+
+input:required {
+background: none;
+color: white 
+}
+
+/*pleca bajo la imágen principal */
+.barra_neat_gray{
+	background-color: #2E3942;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	padding: 2%;
+}
+
+
+h1{
+	font-size: 36px
+}
+
+h2{
+	font-size: 14px;
+	margin-top:5%;
+}
+
+h3{
+	font-size: 20px;
+	font-weight: normal;
+}
+
+h5{
+	color: white;
+	font-weight: normal;
+	line-height: 1.5em
+
+}
+
+
+ /*Lavandería Tintorería Planchado*/
+.servicios{
+	float: left;
+	padding-right: 30px;
+}
+.ptb-10{
+	padding:10% 0 ;
+}
+.pb-50{
+	padding-bottom: 50px
+}
+
+.pt-10{
+	padding-top: 10px
+}
+
+/*animación iconos servicios*/
+.servicios:hover, .garantialogo:hover{
+	-webkit-transform:scale(1.2)
+  	-moz-transform:scale(1.2);
+  	-ms-transform:scale(1.2);
+  	-o-transform:scale(1.2);
+  	transform:scale(1.2);
+  	-webkit-transition:all 0.3s ease-out;
+  	-moz-transition:all 0.3s ease-out;
+  	-ms-transition:all 0.3s ease-out;
+  	-o-transition:all 0.3s ease-out;
+  	transition:all 0.3s ease-out;
+}
+
+ /*Banner beneficios*/
+.banner_beneficios{
+	background-image: url("../imagenes/sillon.png");
+	height: 700px;
+}
+
+.text_left{
+	text-align: left;
+	color:white;
+}
+.text_neat_gray{
+	color: #2E3942
+}
+
+ /*¿Por qué usar Lavadero?*/
+.h1_beneficios{
+	padding: 10% 0 5% 0
+}
+.beneficios_text{
+	display: inline-block;
+	line-height: 1.5;
+	letter-spacing: .5px;
+	font-size: 20px
+}
+
+.text_white{
+	color:white;
+	text-align: center;
+	margin: auto;
+}
+.text_right{
+	display: inline-block;
+	position: relative;
+	left: 62%;
+	bottom: -40px;
+	color: white;
+	font-weight: normal;
+}
+.bg-img-block{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* animacion iconos paloma*/
+div.pb-50 img:hover, div.garantiainfo img:hover{
+        -webkit-transform: rotateZ(10deg) scale(2) ;
+        -ms-transform: rotateZ(10deg) scale(2) ;
+        transform: rotateZ(10deg) scale(2) ;
+        -webkit-transition:all 0.3s ease-out;
+  	-moz-transition:all 0.2s ease-out;
+  	-ms-transition:all 0.2s ease-out;
+  	-o-transition:all 0.2s ease-out;
+  	transition:all 0.2s ease-out;
+}
+/*Sección Nuestra garantía*/
+
+.seccion{
+	padding-top: 70px;
+	height: 300px;
+}
+
+.garantialogo{
+	float: right;
+}
+
+
+.garantiainfo{
+	padding: 5px;
+	color: #2E3942;
+	letter-spacing: 0.3%;
+}
+
+.pdlogo{
+	padding-right: 10px;
+}
+
+/*Sección Slider*/
+
+.slider{
+  width:100%;
+  height: 300px;
+  margin:auto;
+  overflow:hidden; 
+  margin-bottom: 50px
+}
+
+.slider ul{
+  padding:0;
+  display:flex;
+  width:400%;
+  animation: cambio 20s infinite alternate;
+  animation-timing-function:ease;
+}
+
+.slider li{
+  width:100%;
+  list-style:none;
+}
+
+.slider img{
+  width:100%;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0; }     /*Se muestra la 1ª*/
+  20% {margin-left: 0; }        /*Tiempo de transición entre 1 y 2*/
+  
+  25% {margin-left: -100%; } /*Se muestra la 2ª*/
+  45% {margin-left: -100%; }     /*Tiempo de transición entre 2 y 3*/
+ 
+  50% {margin-left: -200%; } /*Se muestra la 3ª*/  
+  70% {margin-left: -200%; }     /*Tiempo de transición entre 3 y 4*/
+ 
+  75% {margin-left: -300%; } /*Se muestra la 3ª*/  
+  100% {margin-left: -300%; }
+}
+
+/*Sección ¿Cuánto Cuesta?*/
+.q{
+	margin-top:5%;
+}
+.w{
+	height: auto;
+	line-height: 1.5em;
+}
+
+.button_calcula{
+	background-color:#7DE0EA;
+	border:#7DE0EA solid 2px;
+	width:80%;
+	height: 42px;
+    padding: 0 10px 0 25px;
+    float: left;
+    margin-top:15%;
+    color:#fff;; 
+	font-size:16px;
+	padding: 0 5px 0 3px;
+}
+
+.button_calcula:hover{
+	opacity: .7;
+	-webkit-transition:all 0.5s ease-out;
+}
+
+
+/**/
+footer{
+	background-color:#2E3942;
+	margin-top:5%;
+	height:300px;
+}
+
+.redes{
+	display: inline;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 2%
+}
+
+.texto_contacto{
+	line-height: 1.5
+}
+
+.copy{
+	margin-top: 50px
+}
